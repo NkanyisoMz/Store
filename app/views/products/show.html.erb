@@ -3,6 +3,9 @@
   <%= @product.description %>
 <% end %>
 
+<%= render "inventory", product: @product %>
+
+
 
 <%= link_to "Back", products_path %>
 <%= image_tag @product.featured_image if @product.featured_image.attached? %>
